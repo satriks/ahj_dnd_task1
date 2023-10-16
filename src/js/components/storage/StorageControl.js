@@ -1,5 +1,5 @@
 import Task from './Task'
-import { createTask } from '../crateTask/CreateTask.js'
+import { exportCreateTask as createTask } from '../crateTask/CreateTask.js'
 
 export class StorageControl {
   constructor () {
