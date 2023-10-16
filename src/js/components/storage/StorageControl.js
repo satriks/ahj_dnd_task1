@@ -10,13 +10,13 @@ export class StorageControl {
   load () {
     this.storage = []
     const data = JSON.parse(localStorage.getItem('Tasks'))
-    if( data) {
-            data.forEach((task) => {
-                this.storage.push(new Task(task.domElement, task.text))
-                createTask(document.querySelector(`.${task.domElement}`), task.text)
-            })
-        }
+    if (data) {
+      data.forEach((task) => {
+        this.storage.push(new Task(task.domElement, task.text))
+        createTask(document.querySelector(`.${task.domElement}`), task.text)
+      })
     }
+  }
 
   save () {
     this.storage = []
