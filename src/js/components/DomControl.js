@@ -1,5 +1,5 @@
-import { createTaskFunction as createTask } from './crateTask.js/CreateTask.js'
-import { createTaskForm } from './crateTask.js/createTaskForm.js'
+import { createTaskFunction as createTask } from './crateTask/CreateTask.js'
+import { createTaskForm } from './crateTask/createTaskForm.js'
 import { StorageControl } from './storage/StorageControl'
 
 export class DomControl {
