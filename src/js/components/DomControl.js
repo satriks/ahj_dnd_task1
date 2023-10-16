@@ -39,8 +39,6 @@ export class DomControl {
     createTask(this.block2, task4)
     createTask(this.block2, task3)
     createTask(this.block3, task2)
-
-    this.StorageControl.save()
   }
 
   dragged = (event) => {
