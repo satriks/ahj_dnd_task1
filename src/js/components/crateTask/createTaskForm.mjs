@@ -1,6 +1,6 @@
-import { createTask } from './CreateTask'
+import { createTask } from './createTask.mjs'
 
-function createTaskForm (place, oldElement) {
+export function createTaskForm (place, oldElement) {
   const container = place.previousElementSibling
 
   const addForm = document.createElement('div')
@@ -45,4 +45,4 @@ function createTaskForm (place, oldElement) {
   })
 }
 
-export const exportCreateTaskForm = () => createTaskForm()
+
