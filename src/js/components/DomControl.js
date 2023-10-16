@@ -1,4 +1,4 @@
-import { createTask } from './crateTask.js/CreateTask.js'
+import { createTaskFunction as createTask } from './crateTask.js/CreateTask.js'
 import { createTaskForm } from './crateTask.js/createTaskForm.js'
 import { StorageControl } from './storage/StorageControl'
 
