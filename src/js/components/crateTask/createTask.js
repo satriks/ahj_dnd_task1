@@ -1,4 +1,4 @@
-function createTask (elementDom, title) {
+export function createTask (elementDom, title) {
   const element = document.createElement('div')
   element.classList.add('item')
 
@@ -22,5 +22,3 @@ function createTask (elementDom, title) {
     }
   })
 }
-
-export const createTaskFunction = createTask
