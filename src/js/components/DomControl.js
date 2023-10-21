@@ -53,7 +53,7 @@ export class DomControl {
       this.actualElement.classList.add('dragged')
 
       document.documentElement.addEventListener('mouseup', this.onMouseUp)
-      document.documentElement.addEventListener('mouseover', this.onMouseOver)
+      document.documentElement.addEventListener('mousemove', this.onMouseOver)
     }
   }
 
@@ -102,6 +102,7 @@ export class DomControl {
   }
 
   onMouseOver = (event) => {
+    if (!this.actualElement) return
     if (event.target && event.target.classList.contains('item')) {
       const { y, height } = event.target.getBoundingClientRect()
       this.place.style.height = this.actualElement.getBoundingClientRect().height + 'px'
